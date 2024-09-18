@@ -13,5 +13,16 @@ int main(){
         count++;
     }
     
+    PatientQueue patientQueue, Doctor doc;
+    while(true){
+        //Ввод пациентов
+        //Желательно предусмотреть ввод пациентов через файл
+    }
+    while (true){//???
+        Patient* current = patientQueue.GetNextPatient();
+        doc.Next(current);
+        delete current;
+    }
+    
     return 0;
 }
